@@ -6,12 +6,20 @@ Este repositório contém todos os exercícios que concluí durante o curso **Ja
 O curso aborda a programação em Java desde os fundamentos até tópicos avançados, incluindo:
 
 - Sintaxe Básica e Tipos de Dados
+- Estrutura Sequencial
+- Estrutura Condicional
+- Estrutura Repetitiva
 - Programação Orientada a Objetos (POO)
-- Tratamento de Exceções
+- Vetores
 - Operações de Entrada e Saída (I/O)
-- Framework de Coleções
+- Herança e Polimorfismo
+- Programação Funcional e expressões lambdas
+- Acesso a banco de dados com JDBC
+- Interfaces
+- Enumerações e Composição
+- Generics, Set e Map
 - Integração com Banco de Dados (JDBC)
-- Tópicos Avançados (Threads, Streams e mais)
+
 
 ## 📂 Estrutura do Repositório
 
