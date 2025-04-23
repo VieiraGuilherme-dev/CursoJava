@@ -168,8 +168,21 @@ java Exercicio
 📌 Exemplo de Código
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Olá, Mundo!");
+        saudacao("Guilherme");
+        int resultado = somar(5, 7);
+        System.out.println("Resultado da soma: " + resultado);
+    }
+
+    // Método para exibir uma saudação personalizada
+    public static void saudacao(String nome) {
+        System.out.println("Olá, " + nome + "! Bem-vindo ao Java.");
+    }
+
+    // Método para somar dois números inteiros
+    public static int somar(int a, int b) {
+        return a + b;
     }
 }
 
