@@ -24,10 +24,14 @@ O curso aborda a programação em Java desde os fundamentos até tópicos avanç
 ## 📂 Estrutura do Repositório
 
 ```bash
-├── basico/         # Exercícios fundamentais (variáveis, loops, condicionais)
-├── poo/            # Programação Orientada a Objetos (classes, herança, polimorfismo)
-├── vetores/       # Exercícios com Listas, Mapas e Conjuntos       
-└── avancado/       # Threads, Streams e outros tópicos avançados
+├── basico/                   # Exercícios fundamentais (variáveis, loops, condicionais)
+├── poo/                      # Programação Orientada a Objetos (classes, herança, polimorfismo)
+├── Herança e Polimorfismo/   # Exercícios focados em herança, sobrescrita e polimorfismo em Java
+├── Vetor/                    # Manipulação de vetores (arrays unidimensionais)
+├── Matriz/                   # Trabalhos com matrizes (arrays bidimensionais)
+├── ArrayList e Listas/       # Uso de listas dinâmicas (ArrayList, List) e suas operações
+├── Set e Map/                # Conjuntos e mapas em Java (HashSet, TreeSet, HashMap, LinkedHashMap)
+└── Tratamento de Exceções/   # Estruturas try-catch, lançamento de exceções e boas práticas
 ```
 
 ## 🚀 Como Executar os Exercícios
@@ -69,11 +73,14 @@ O curso aborda a programação em Java desde os fundamentos até tópicos avanç
 ## 📂 Estrutura do Repositório
 
 ```bash
-├── basico/         # Exercícios fundamentais (variáveis, loops, condicionais)
-├── poo/            # Programação Orientada a Objetos (classes, herança, polimorfismo)
-├── colecoes/       # Exercícios com Listas, Mapas e Conjuntos
-├── excecoes/       # Tratamento de erros e exceções personalizadas
-└── avancado/       # Threads, Streams e outros tópicos avançados
+├── basico/                   # Exercícios fundamentais (variáveis, loops, condicionais)
+├── poo/                      # Programação Orientada a Objetos (classes, herança, polimorfismo)
+├── Herança e Polimorfismo/   # Exercícios focados em herança, sobrescrita e polimorfismo em Java
+├── Vetor/                    # Manipulação de vetores (arrays unidimensionais)
+├── Matriz/                   # Trabalhos com matrizes (arrays bidimensionais)
+├── ArrayList e Listas/       # Uso de listas dinâmicas (ArrayList, List) e suas operações
+├── Set e Map/                # Conjuntos e mapas em Java (HashSet, TreeSet, HashMap, LinkedHashMap)
+└── Tratamento de Exceções/   # Estruturas try-catch, lançamento de exceções e boas práticas
 ```
 
 ## 🚀 Como Executar os Exercícios
@@ -110,11 +117,29 @@ public static void main(String[] args) {
 }
 ```
 
-## 📌 Notas
-- As soluções são atualizadas regularmente conforme o progresso no curso.
+##📌 Notas
+🧠 Este repositório contém soluções e anotações baseadas no curso em andamento.
+
+🔄 As soluções são atualizadas regularmente conforme o progresso no curso.
+
+📁 Cada pasta ou arquivo está nomeado de forma clara para facilitar a navegação entre os exercícios e projetos.
+
+💬 Comentários no código ajudam a explicar a lógica e facilitar a compreensão.
+
+🛠️ Tecnologias utilizadas variam conforme o módulo do curso (Java, estrutura de dados, etc.).
+
+🗂️ Algumas soluções podem incluir arquivos de entrada (ex: .txt) para simular cenários reais.
+
+
 
 ## 📧 Contato
-Para dúvidas ou sugestões, entre em contato via [email](mailto:gv524003@gmail.com).
+Para dúvidas, sugestões ou colaborações, sinta-se à vontade para entrar em contato:
+
+📬 Email: gv524003@gmail.com
+
+📱 WhatsApp: (77) 99982-6840
+
+💼 LinkedIn: linkedin.com/in/guilherme-vieira-0a3902322
 
 Boa programação! 🎯
 
@@ -156,7 +181,7 @@ As soluções são atualizadas regularmente conforme o progresso no curso.
 
 📧 Contato
 
-Para dúvidas ou sugestões, entre em contato via email.
+Para dúvidas ou sugestões, entre em contato via email, numero de wpp e linkedin!
 
 Boa programação! 🎯
 
