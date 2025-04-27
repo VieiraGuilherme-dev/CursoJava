@@ -5,12 +5,14 @@ public class Product {
     private Double price;
     private Integer quantity;
 
+    // Construtor
     public Product(String name, Double price, Integer quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
+    // Getters e Setters
     public String getName() {
         return name;
     }
@@ -33,5 +35,16 @@ public class Product {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    // Método que calcula o valor total do produto
+    public Double total() {
+        return price * quantity;
+    }
+
+    // Método toString para facilitar a exibição das informações
+    @Override
+    public String toString() {
+        return name + ", $ " + String.format("%.2f", price) + ", Quantity: " + quantity;
     }
 }
