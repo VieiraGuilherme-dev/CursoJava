@@ -18,20 +18,29 @@ public class Program3 {
         File sourceFile = new File(sourceFileStr);
         String sourceFolderStr = sourceFile.getParent();
 
-        File success = new File(sourceFolderStr + "\\out");
-        success.mkdir(); // cria pasta "out"
+        // Usando File.separator para compatibilidade com diferentes sistemas operacionais
+        File success = new File(sourceFolderStr + File.separator + "out");
+        
+        // Verifica se a pasta de saída já existe, caso contrário, cria
+        if (!success.exists()) {
+            success.mkdirs(); // cria a pasta "out" e qualquer diretório necessário
+        }
 
-        String targetFileStr = sourceFolderStr + "\\out\\summary.csv";
+        String targetFileStr = success.getPath() + File.separator + "summary.csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(sourceFileStr))) {
             String itemCsv = br.readLine();
             while (itemCsv != null) {
                 String[] fields = itemCsv.split(",");
-                String name = fields[0];
-                double price = Double.parseDouble(fields[1]);
-                int quantity = Integer.parseInt(fields[2]);
+                try {
+                    String name = fields[0];
+                    double price = Double.parseDouble(fields[1]);
+                    int quantity = Integer.parseInt(fields[2]);
 
-                list.add(new Product(name, price, quantity));
+                    list.add(new Product(name, price, quantity));
+                } catch (NumberFormatException e) {
+                    System.out.println("Error parsing data: " + e.getMessage());
+                }
                 itemCsv = br.readLine();
             }
 
@@ -41,12 +50,15 @@ public class Program3 {
                     bw.newLine();
                 }
                 System.out.println(targetFileStr + " created.");
+            } catch (IOException e) {
+                System.out.println("Error writing to file: " + e.getMessage());
             }
 
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
+        } finally {
+            sc.close();  // Garante que o Scanner seja fechado
         }
-
-        sc.close();
     }
 }
+
